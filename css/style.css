@@ -1,0 +1,529 @@
+@font-face {
+    font-family: "fertigo";
+    src: url("../fonts/FertigoPro.otf");
+}
+
+@font-face {
+    font-family: "merriweather";
+    src: url("../fonts/Merriweather-Italic.ttf");
+}
+
+* {
+    font-size: 12px;
+    margin: 0;
+    font-family: fertigo;
+}
+
+a {
+    text-decoration: none;
+}
+
+.disable {
+    display: none;
+}
+
+.nav {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    margin-top: 13px;
+    height: 35px;
+}
+
+.logo {
+    height: 45px;
+    margin: 10px 20px;
+}
+
+.navigate {
+    display: inline-block;
+}
+
+.navigate:hover .line {
+    background-color: black;
+    animation: garis .4s ease-in-out;
+}
+
+@keyframes garis {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.linknav {
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    opacity: .85;
+}
+
+.line {
+    height: 2px;
+    transition: .3s;
+}
+
+.opening {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.h1_o {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.p_o {
+    font-size: 1.4em;
+    margin: 0 30px;
+}
+
+.container {
+    width: 100%;
+}
+
+.dropmenu {
+    display: none;
+    position: absolute;
+    transition: .5s;
+}
+
+.dropmenu a {
+    display: block;
+    color: black;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.dropmenu a:hover {
+    background-color: #f3f3f3;
+}
+
+.dropdown:hover .dropmenu {
+    display: block;
+}
+
+footer {
+    overflow: hidden;
+    border-top: solid 1px #bebebe;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+}
+
+.h1_f {
+    font-size: 1.5em;
+}
+
+.p_f {
+    padding: 5px;
+}
+
+.bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: solid 1px #9b9b9b;
+    width: 200px;
+    margin: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.up {
+    margin: auto;
+    max-width: 850px;
+    width: 75%;
+    height: 90px;
+}
+
+.book {
+    margin: 45px auto;
+}
+
+.book-container {
+    background: url("../images/bg.jpg") no-repeat fixed 50% 0;
+    background-size: cover;
+    margin: 45px auto 0 auto;
+}
+
+form {
+    margin: auto 20px auto auto;
+    width: 250px;
+    max-width: 800px;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-bottom: 4px solid #333;
+}
+
+.input {
+    margin: 30px auto;
+    width: 100%;
+}
+
+label {
+    color: #f7f7f7;
+    text-shadow: 0 0 3px #292929;
+    font-size: 1.7em;
+}
+
+.tanggal {
+    margin-left: 20px;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.form {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+button {
+    margin: auto 0 10px auto;
+    height: 30px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border: solid 1px white;
+    transition: .3s;
+}
+
+button:hover {
+    box-shadow: 0 2px 15px #727272;
+    transform: translateY(-1px);
+}
+
+.top {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.r {
+    text-align: right;
+}
+
+.t_form {
+    color: white;
+    background-color: #333333;
+    float: right;
+    margin: -20px 10px auto auto;
+    font-size: 2.4em;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.back {
+    height: 530px;
+    width: 100%;
+    background: url(../images/back.jpg) no-repeat center;
+    background-size: auto 110%;
+}
+
+.front {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
+.title-container {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    margin-top: 230px;
+    text-align: center;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.ini {
+    background-color: black;
+}
+
+input {
+    font-family: sans-serif;
+}
+
+.image-container {
+    margin: 45px auto;
+    width: 90%;
+    height: 300px;
+    max-width: 1100px;
+}
+
+.images {
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 10px 10px;
+    width: 27%;
+    height: 145px;
+}
+
+.img_l {
+    width: 43%;
+    height: 300px;
+    margin: 0;
+}
+
+.img_t {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 1.7em;
+}
+
+.img_l .img_t {
+    padding-top: 100px;
+}
+
+.img_preview {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+.imgs_capt {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.imgs_capt:hover .img_preview {
+    display: block;
+    animation: prev .5s;
+}
+
+@keyframes prev {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.imgs_span {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.fa {
+    font-size: 1.5em;
+}
+
+.a_f {
+    color: white;
+}
+
+.a_f:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    animation: modal .5s;
+}
+
+.modal-content {
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgba(0,0,0,0.6);
+    animation: modalcontent .5s cubic-bezier(.17, .47, .19, 1.16);
+}
+
+@keyframes modal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes modalcontent {
+    from {transform: scale(0);} 
+    to {transform: scale(1);}
+}
+
+.slideshow {
+    width: 100%;
+    height: 100%;
+}
+
+.ss_cont {
+    width: 100%;
+    height: 100%;
+}
+
+.close {
+    position: absolute;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgba(255,255,255,.7);
+    background-color: rgba(0,0,0,.7);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    right: 5%;
+    border-radius: 0 0 0 10px;
+    padding-top: 5px;
+    transition: .5s;
+}
+
+.close:hover {
+    background-color: rgba(255,255,255,.7);
+    color: black;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.next {
+    left: auto;
+    right: 5%;
+}
+
+.next:hover, .prev:hover {
+    background-color: rgba(0,0,0,.6);
+}
+
+.urut {
+    position: fixed;
+    text-align: center;
+    font-family: cursive;
+    padding: 10px;
+    background-color: rgba(255,255,255,.75);
+    margin-top: -35px;
+    border-radius: 5px 5px 0 0;
+    width: 25px;
+}
+
+.navicon {
+    display: none;
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.closebtn {
+    float: right;
+    margin-right: 20px;
+    font-size: 60px;
+    color: #a7a7a7;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.overlay-content {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.overlay a {
+    text-align: center;
+    padding: 8px;
+    font-size: 32px;
+    color: #a7a7a7;
+    display: block;
+    transition: .3s;
+}
+
+.overlay a:hover, .closebtn:hover {
+    color: white;
+}
+
+.cont {
+    transform: translateY(-100%);
+}
+
+#message {
+    position: fixed;
+    bottom: -60px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.message {
+    background-color: #333;
+    color: white;
+    border-radius: 3px;
+    padding: 20px 25px;
+    margin: auto;
+    display: table;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.progress {
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: black;
+}
+
+#progress {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 0%;
+}
+
+.anim {
+    animation: garis 4s cubic-bezier(1, 1, 0, 0);
+}
